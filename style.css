@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+        /* Header Section Ends Here */
 header{
     display: flex;
     color: white;
@@ -12,6 +13,7 @@ header{
     height: 58.539px;
     flex-shrink: 0;
     position: relative;
+    margin-bottom: 2em;
 }
 .logo > img{
     width: 35px;
@@ -32,6 +34,76 @@ header{
     position: absolute;
     left: 10.5em;
 }
-.navbar-text > span {
-    
+.navbar-text > .span-text {
+    font-weight: lighter;
+}
+nav {
+    justify-content: flex-end;
+    position: absolute;
+    right: 30em;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 17px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: normal;
+    transition: 0.3s ease-in-out;
+}
+nav a:hover {
+    color: var(--Secondary, #F9995D);
+}
+.nav-search > input{
+    width: 13em;
+    margin: 0 10rem;
+    height: 2rem;
+    background-color: #242535;
+    color: white;
+    border-radius: 5%;
+    border: 1px solid var(--Natural-100, #242535);
+}
+.nav-search > ::placeholder{
+    color: #A1A1AA;
+    padding-left: 1em;
+    font-size: 1.3em;
+}
+        /* Header Section Ends Here */
+
+.container-fluid {
+    background-image: url(./assests/hero.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    max-width: 70%;
+    height: 70vh;
+    border-radius: 0.8em;
+    position: relative;
+    left: 13em;
+}
+.container-elem{
+    background-color: #141624;
+    width: 29.4em;
+    height: 14em;
+    color: #fff;
+    position: absolute;
+    bottom: -2.5em;
+    left: 3em;
+    z-index: 1;
+    border: 1px solid var(--Natural-100, #242535);
+    border-radius: 0.9em;
+}
+.container-elem-title{
+    background-color: #4B6BFB;
+    width: fit-content;
+    padding: 0.4em 1em;
+    border-radius: 0.3em;
+    margin: 2em 0 0 2em;
+}
+.container-elem-txt{
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-left: 1.3em;
+    margin-top: 0.7em;
 }
