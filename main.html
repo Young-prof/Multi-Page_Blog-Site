@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-eF4eJ67zUUVaRvnb6i6qkzuvU8ZP5c2z31BoLRHR4/MGrLoPeXsT1GZU00dApQb4" crossorigin="anonymous">
+    <title>On/Off Switch</title>
+    <style>
+        /* Style for the on/off switch container */
+        /* .onoff-switch {
+            display: flex;
+            align-items: center;
+        } */
+
+        /* Style for the checkbox input (hidden) */
+        .onoff-switch input {
+            display: none;
+        }
+
+        /* Style for the label (switch) */
+        .onoff-switch label {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            /* Set the width of the switch */
+            height: 34px;
+            /* Set the height of the switch */
+        }
+
+        /* Style for the slider (background of the switch) */
+        .onoff-switch .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            /* Round corners of the switch */
+            transition: 0.4s;
+            /* Smooth transition on hover */
+        }
+
+        /* Style for the slider (before state) */
+        .onoff-switch .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            /* Set initial position of the slider knob */
+            bottom: 4px;
+            /* Set initial position of the slider knob */
+            background-color: white;
+            border-radius: 50%;
+            /* Round corners of the slider knob */
+            transition: 0.4s;
+            /* Smooth transition on hover */
+        }
+
+        /* Style for the checked state of the checkbox */
+        .onoff-switch input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        /* Style for the checked state of the slider (before state) */
+        .onoff-switch input:checked+.slider:before {
+            transform: translateX(26px);
+            /* Move the slider knob to the right */
+        }
+
+        /* Style for the Font Awesome icons */
+        .onoff-switch .fas {
+            color: white;
+            margin: 4px;
+            /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- On/Off switch container -->
+    <div class="onoff-switch">
+        <input type="checkbox" id="toggleSwitch">
+        <label class="slider" for="toggleSwitch">
+            <i class="fas fa-power-off"></i> <!-- Off icon -->
+            <i class="fas fa-power-on"></i> <!-- On icon -->
+        </label>
+    </div>
+
+</body>
+
+</html>
