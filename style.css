@@ -420,7 +420,7 @@ header{
     font-size: 16px;
 }
 
-.footer .botton {
+.footer > .footer-abt > .botton {
     border-radius: 0.4em;
     border: 1px solid var(--Neutral-100, #242535);
     background: #242535;
@@ -682,7 +682,7 @@ header{
     }
 
     .content{
-        height: 315em;
+        height: 310em;
         /* margin-bottom: 10em; */
     }
     .content > .card-container > .content-card {
@@ -703,29 +703,63 @@ header{
     }
 
     .view-post {
-        bottom: 10em;
+        bottom: 6em;
         left: 40%;
         width: fit-content;
     }
 
     .content-box1 {
         width: 35%;
-        bottom: 3em;
-        left: 34%;
+        bottom: 0;
+        left: 32%;
     }
 
     .footer{
         display: block;
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
-        /* height: 250vh; */
-        /* bottom: 0; */
+        height: 150em;
+        bottom: 0;
+        margin-top: 0;
     }
 
     .footer > .footer-abt {
-        height: 30em;
-        width: 100%;
+        height: 18em;
+        width: 90%;
         /* margin-bottom: 2em; */
+    }
+    footer > .footer > .footer-abt > .abt{
+        top: 0;
+        left: 3em;
+        width: 70%;
+        /* margin-top: 0; */
+    }
+    footer > .footer > .footer-abt > .botton{
+    top: 25%;
+    left: 4em;
+    }
+    .footer .footer-abt .links {
+        left: 6em;
+        top: 12%;
+    }
+    .footer .footer-abt .cat-abt {
+        top: 12%;
+        right: 9em;
+    }
+    footer > .footer .footer-image {
+        bottom: 50em;
+        left: 0;
+    }
+    footer > .footer > .footer-list {
+        right: 0;
+        top: 100%;
+    }
+    
+    .footer hr {
+        /* bottom: 15%; */
+        left: 4.8em;
+        top: 36%;
+        width: 60%;
     }
     /*
     .footer .footer-abt a {
@@ -762,11 +796,6 @@ header{
         color: #fff;
     }
 
-    .footer .footer-abt .links {
-        position: absolute;
-        left: 35em;
-        top: 2em;
-    }
 
     .footer .footer-abt .links h4 {
         font-size: 18px;
@@ -777,11 +806,7 @@ header{
         font-size: 16px;
     }
 
-    .footer .footer-abt .cat-abt {
-        position: absolute;
-        right: 35em;
-        top: 2em;
-    }
+
 
     .footer .footer-abt .cat-abt h4 {
         font-size: 18px;
@@ -804,21 +829,8 @@ header{
         top: 4em;
     }
 
-    .footer hr {
-        background-color: #242535;
-        position: absolute;
-        bottom: 5.5em;
-        width: 83%;
-        left: 8em;
-        border: none;
-        height: 1px;
-    }
 
-    .footer .footer-image {
-        position: absolute;
-        margin-top: 17em;
-        left: -5.2em;
-    }
+
 
     .footer .footer-text {
         color: #fff;
